@@ -1,8 +1,9 @@
 ---
 name: self-updater
-version: 1.3.0
+version: 1.4.0
 description: |
-  ⭐ ONLY skill with Cron-aware + Idle detection! Auto-updates OpenClaw core & skills, analyzes cron schedules to avoid user tasks, waits for idle time, AI-powered risk assessment, user approval for high-risk updates, and smart notifications. The most intelligent updater for OpenClaw maintenance.
+  ⭐ OPEN SOURCE! GitHub: github.com/GhostDragon124/openclaw-self-updater
+  ⭐ ONLY skill with Cron-aware + Idle detection! Auto-updates OpenClaw core & skills, analyzes cron schedules to avoid user tasks, waits for idle time, AI-powered risk assessment, user approval for high-risk updates, and smart notifications.
   Use for: auto-update, maintenance, cron, smart-schedule, skills, gateway, restart, healthcheck, monitoring, ops
 ---
 
@@ -59,9 +60,9 @@ Evaluates 5 factors to calculate risk score:
 | Cron Proximity | 10% | Distance to next task |
 
 **Risk Levels**:
-- 🟢 **Low** (Score <35): Auto-update
-- 🟡 **Medium** (35-59): Update with warning
-- 🔴 **High** (≥60): Requires YOUR approval
+- 🟢 **Low** (Score <50): Auto-update
+- 🟡 **Medium** (Score 50-74): Warning but auto-update
+- 🔴 **High** (Score ≥75): Requires YOUR approval
 
 ## User Approval Flow
 

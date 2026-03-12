@@ -168,7 +168,7 @@ function Get-ImpactAssessment {
     
     $totalScore = $versionScore + $skillScore + $restartScore + $timeScore + $cronScore
     
-    $riskLevel = if ($totalScore -ge 60) { "High" } elseif ($totalScore -ge 35) { "Medium" } else { "Low" }
+    $riskLevel = if ($totalScore -ge 75) { "High" } elseif ($totalScore -ge 50) { "Medium" } else { "Low" }
     $riskEmoji = if ($riskLevel -eq "High") { "🔴" } elseif ($riskLevel -eq "Medium") { "🟡" } else { "🟢" }
     
     return @{

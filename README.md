@@ -1,5 +1,7 @@
 # OpenClaw Self-Updater
 
+[⭐ GitHub](https://github.com/GhostDragon124/openclaw-self-updater) | [📦 ClawHub](https://clawhub.ai/self-updater)
+
 ⭐ The ONLY OpenClaw updater with Cron-aware + Idle detection!
 
 Intelligent auto-updater that checks for updates while respecting your scheduled tasks.
