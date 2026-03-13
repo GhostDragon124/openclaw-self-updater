@@ -1,10 +1,22 @@
 ---
 name: self-updater
-version: 1.4.0
+version: 1.4.1
 description: |
   ⭐ OPEN SOURCE! GitHub: github.com/GhostDragon124/openclaw-self-updater
   ⭐ ONLY skill with Cron-aware + Idle detection! Auto-updates OpenClaw core & skills, analyzes cron schedules to avoid user tasks, waits for idle time, AI-powered risk assessment, user approval for high-risk updates, and smart notifications.
   Use for: auto-update, maintenance, cron, smart-schedule, skills, gateway, restart, healthcheck, monitoring, ops
+repository:
+  type: git
+  url: https://github.com/GhostDragon124/openclaw-self-updater
+homepage: https://github.com/GhostDragon124/openclaw-self-updater#readme
+required_binaries:
+  - pwsh (PowerShell 5.1+)
+  - npm
+  - clawhub
+optional_envs:
+  - TELEGRAM_BOT_TOKEN
+  - FEISHU_APP_ID
+  - FEISHU_APP_SECRET
 ---
 
 # Self Updater
@@ -118,10 +130,20 @@ Auto-detects: Telegram, Feishu
 
 ## Requirements
 
-- PowerShell 5.1+
+- PowerShell 5.1+ (pwsh)
 - npm + clawhub CLI
 - Windows (idle detection)
-- Reads: ~/.openclaw/openclaw.json, ~/.openclaw/cron/jobs.json
+- Reads: `~/.openclaw/openclaw.json` (port only), `~/.openclaw/cron/jobs.json`
+
+### Optional Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `TELEGRAM_BOT_TOKEN` | Telegram bot token for notifications |
+| `FEISHU_APP_ID` | Feishu app ID for notifications |
+| `FEISHU_APP_SECRET` | Feishu app secret for notifications |
+
+> **Note:** This skill only reads the `gateway.port` from config. No credentials are transmitted externally.
 
 ## Tags
 
