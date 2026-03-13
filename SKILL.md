@@ -1,6 +1,6 @@
 ---
 name: self-updater
-version: 1.4.1
+version: 1.4.2
 description: |
   ⭐ OPEN SOURCE! GitHub: github.com/GhostDragon124/openclaw-self-updater
   ⭐ ONLY skill with Cron-aware + Idle detection! Auto-updates OpenClaw core & skills, analyzes cron schedules to avoid user tasks, waits for idle time, AI-powered risk assessment, user approval for high-risk updates, and smart notifications.
